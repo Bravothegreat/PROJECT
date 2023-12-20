@@ -253,52 +253,57 @@ width: 159px;
     height: 1294px;
     flex-shrink: 0;
      background-color: var(--clr-bg);
-     margin: 0 auto;
-   padding: 12px 12px 0 12px;
+     background-color: var(--clr-btn);
+   margin: 0 auto;
+   
    
    }
 
    .first_container{
-    margin: 15px 0 15px 0;
+    margin: 15px 0 15px 10px;
 
-    p{
-      display: none;
-    }
-
-    .second_p{
-      display: block;
-      width: 327px;
-      height: 50px;
-      font-family: Brown;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 25px; /* 156.25% */
-      color: var(--cl-placeholder);
-    }
-
-
-    h2{
-      width: 327px;
-      height: 30px;
-      flex-shrink: 0;
-      font-family: Brown;
-      font-size: 30px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: -0.8px;
-      color: var(--cl-black);
-    }
-
-    img{
-      width: 38.667px;
-      height: 40px;
-      flex-shrink: 0;
-      drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.10));
-    
-    }
    }
+
+   .first_container p{
+    display: none;
+  }
+
+   .first_container .second_p{
+    display: block;
+    width: 327px;
+    height: 50px;
+    font-family: Brown;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px; /* 156.25% */
+    color: var(--cl-placeholder);
+    
+    
+  }
+
+
+   
+   h2{
+    width: 327px;
+    height: 30px;
+    flex-shrink: 0;
+    font-family: Brown;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.8px;
+    color: var(--cl-black);
+    background-color: red;
+  }
+
+   img{
+    width: 38.667px;
+    height: 40px;
+    flex-shrink: 0;
+    background-color: red;
+  }
 
 
    .second_container{
@@ -309,6 +314,7 @@ width: 159px;
     box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
     background-color: var(--clr-div-bg);
     display: flex;
+    margin: 0 auto;
     padding: 0;
    }
 
@@ -317,123 +323,137 @@ width: 159px;
     display: flex;
     
     justify-content: space-between;
-    margin-left: 15px;
+    padding: 35px 5px 0 5px;
 
-    label{
-      width: 179px;
-      font-family: Sofia Pro;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 2.5;
-      letter-spacing: 0.1px;
-      }
+   }
 
 
-      input,
-      select,
-      button{
-        width: 295px;
-        height: 48px;
-        flex-shrink: 0;
-        border-radius: 2px;
-        border: 1px solid var(--cl-input);
-        outline: none;
-      }
-
-      input:hover,
-      select:hover,
-      button:hover,
-      #activity:hover,
-      #pass_code:hover,
-      button:hover
-      {
-       border: 1px solid var(--clr-btn);
-      }
-
-      input:active,
-      select:active,
-      button:active,
-      #activity:active,
-      #pass_code:active,
-      button:active
-      {
-       border: 1px solid var(--clr-btn);
-      }
-
-      #activity,
-      #pass_code,
-      button{
-        width: 295px;
-        height: 48px;
-        flex-shrink: 0;
-        border-radius: 2px;
-        border: 1px solid var(--cl-input);
-      }
+   label{
+    width: 179px;
+    font-family: Sofia Pro;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.5;
+    letter-spacing: 0.1px;
+    background-color: red;
+    }
 
 
-      .form_one,
-      .form_two,
-      .form_three {
+   form input,
+   form select,
+   button{
+     width: 295px;
+     height: 48px;
+     flex-shrink: 0;
+     border-radius: 2px;
+     border: 1px solid var(--cl-input);
+     outline: none;
+   }
+
+   input:hover,
+   select:hover,
+   button:hover,
+  .select #activity:hover,
+  .password #pass_code:hover,
+   button:hover
+   {
+    border: 1px solid var(--clr-btn);
+   }
+    
+
+   input:active,
+   select:active,
+   button:active,
+  .select #activity:active,
+  .password #pass_code:active,
+   button:active
+   {
+    border: 1px solid var(--clr-btn);
+   }
+
+
+   .select #activity,
+   .password #pass_code,
+    button {
+      width: 295px;
+     height: 48px;
+     flex-shrink: 0;
+     border-radius: 2px;
+     border: 1px solid var(--cl-input);
+   } 
+
+     form .form_one,
+     form .form_two,
+     form .form_three {
         display: flex;
         flex-direction: column;
         gap: 10px;
       }
 
-      ::placeholder{
-        font-family: Sofia Pro;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 20px; /* 142.857% */
-        letter-spacing: 0.2px;
-        color: var(--cl-placeholder);
-      }
 
-      button{
-        width: 295px;
-        height: 48px;
-        flex-shrink: 0;
-        fill: var(--clr-btn);
-        filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
-      }
+   ::placeholder{
+    font-family: Sofia Pro;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+    color: var(--cl-placeholder);
+    background-color: red;
+    padding-left: 10px;
+  }
 
-      footer{
-        position: relative;
 
-       p{
-        display: none;
-       }
-       
-       .hide_paragraph{
-        position: absolute;
-        display: block;
-        text-align: center;
-        font-family: Sofia Pro;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 25px; /* 178.571% */
-        color: var(--cl-footer);
-        width: 316px;
-        height: 50px;
-        margin-left: -10px;
-        top: 15px;
-       }
 
-       a{
-        font-family: Sofia Pro;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 25px;
-        text-decoration-line: underline;
-        color: var(--clr-btn);
-       }
-      }
+   form button{
+    width: 295px;
+    height: 48px;
+    flex-shrink: 0;
+    fill: var(--clr-btn);
+    filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
+    background-color: red;
+  }
 
+
+    footer{
+    position: relative;
+
+  }
+
+  .hide_paragraph{
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-family: Sofia Pro;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */
+    color: var(--cl-footer);
+    width: 316px;
+    height: 50px;
+    margin-left: -10px;
+    top: 15px;
+    background-color: red;
    }
 
+
+  footer p{
+    display: none;
+   }
+
+   
+  footer a{
+    font-family: Sofia Pro;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    text-decoration-line: underline;
+    color: var(--clr-btn);
+    background-color: red;
+   }
   
  
 }
