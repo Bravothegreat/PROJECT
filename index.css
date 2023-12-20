@@ -5,10 +5,13 @@
   --clr-border_shadow:rgba(0, 0, 0, 0.10);
   --clr-bg:#F7FDFC;
   --cl-plachold: #737373;
-
-
+ --cl-black:#000B0A;
+--cl-label:#011C34;
+--cl-input: #f0f0f0;
+--cl-placeholder: #737373;
+--cl--fph:#011c34;
+--cl-footer:#000;
 }
-
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -27,11 +30,9 @@
   4. Improve text rendering
 */
 body {
-  line-height: 1.5;
- 
    background-color: var(--clr-bg);
    overflow-x: hidden;
-   height: 100vh;
+   height: 100%;
 }
 /*
   5. Improve media defaults
@@ -59,193 +60,191 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-
+/* MAIN STYLING*/
 
 section{
-  display: flex;
-  padding-top: 20px;
-margin: 0 auto;
- width: 970px;
-height: 490px;
-flex-shrink: 0;
-
-
-}
-
-.form_one,
-.form_two,
-.form_three
-{
-  display: flex;
-  gap: 42px;
-  margin-top: 12px;
-  
-}
-
-.second_container{
-  background-color: var(--clr-div-bg);
-  padding: 10px;
-  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
-  border-radius: 6px;
-  width: 502px;
-  height: 580px;
+ display: flex;
+ flex-direction: row;
+  width: 1140px;
+  height: 840px;
   flex-shrink: 0;
-display: flex;
-
-
->
-form{
-  margin-left: 10px;
-
-}
- >
-form  input
-  
-{
-  width: ;
- 
-}
-
- 
-
-> 
-form label{
-  font-weight: 600;
-  
-}
-
-  .select .activity{
-  padding: 10px;
-}
-
-footer{
- position: relative;
- margin: 10px 0 0 15px;
-
-}
-
-footer a{
-  color: var(--clr-btn);
-  color: var(--CL-Green, #2EC4B6);
-font-family: Sofia Pro;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 25px;
-text-decoration-line: underline;
-}
-
-footer .display{
-  display: none;
-  position: absolute;
-  color: #000;
-
-  text-align: center;
-  font-family: Sofia Pro;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 25px; /* 178.571% */
-}
-
-
-.form_sub_three .genderbase{
-  width: ;
-  padding: 9px 0 9px 0;
- 
-}
-
-
-label{
- line-height: 2.5;
-}
-  
-.form_sub_four{
-  margin-left: 110px;
-
- 
-
-}
+background-color: var(--clr-bg);
+margin: 0 auto;
+padding: 12px 12px 0 12px;
 
 }
 
 .first_container{
+margin: 180px 45px 0 30px;
+
+ p{
  
-margin-left: 30px;
-padding: 100px 60px 0 0px;
->
-p,
-h2
-{
-  margin-left: 15px;
+  color: var(--cl-plachold);
+font-family: Brown;
+font-size: 1rem;
+font-style: normal;
+font-weight: 600;
+line-height: 25px; /* 156.25% */
+width: 450px;
+height: 75px;
+margin-left: 10px;
+
+ } 
+
+
+.second_p{
+display: none;
+
 }
 
-p{
-  width: 340px;
-
+h2{
+  color: var();
+font-family: Brown;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 50px; /* 125% */
+letter-spacing: -0.8px;
+width: 268px;
+height: 50px;
+margin: 7px 0 7px 10px;
 }
 
->
 img{
- 
+  width: 77.333px;
+height: 80px;
 flex-shrink: 0;
 drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.10));
-}
 
 }
 
-.activity,
-#pass_code,
-button,
-.input
-{
-  width: ;
 }
 
-.select_opt,
-.form_password,
-.btn
-{
-  margin-top: 12px;
+.second_container{
+  width: 580px;
+height: 679px;
+flex-shrink: 0;
+border-radius: 6px;
+box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+background-color: var(--clr-div-bg);
+padding: 5px;
+display: flex;
+
+
 }
 
-.btn button{
-  box-shadow: (0px 10px 40px rgba(0, 0, 0, 0.10));
-  background-color: var(--clr-btn);
-  outline: none;
-  border: 1px solid var(--clr-btn);
-  text-align: center;
-  color: var(--clr-div-bg);
-  padding: 9px 0 9px 0;
-}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
 
-::placeholder,
-   select
-{
- padding-left: 10px;
-color: var(--CL-Grey, #737373);
+  #fname{
+    border: 2px solid var(--clr-btn);
+  }
+  
+  label{
+color: var(--cl-label);
 font-family: Sofia Pro;
-font-size: 14px;
+font-size: 1rem;
 font-style: normal;
-font-weight: 300;
-line-height: 20px; /* 142.857% */
-letter-spacing: 0.2px;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.1px;
+line-height: 2.5;
+width: 159px;
+  }
+
+  input,
+  select,
+  button
+  {
+    width: 238px;
+    height: 48px;
+    flex-shrink: 0; 
+    color: var(--cl-black);
+    border: 2px solid var(--cl-input);
+    font-size: large;
+  }
+
+  #activity,
+  #pass_code,
+  button{
+    width: 500px;
+    height: 48px;
+    color: var(--cl-black);
+    border-radius: 2px;
+    border: 1px solid var(--cl-input)
+  }
+
+  
+  .form_one,
+  .form_two,
+  .form_three {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+    ::placeholder
+    {
+      color: var(--cl--fph);
+      padding-left: 5px;
+      
+    }
+
+    button{
+      color: var(--clr-div-bg);
+      text-align: center;
+      font-family: Sofia Pro;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.2px;
+      drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
+      background-color: var(--clr-btn);
+    }
+
+    footer{
+
+      p{
+        font-family: Sofia Pro;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 178.571% */
+        color: var(--cl-footer);
+        width: 463px;
+        height: 25px;
+        margin-left: 25px;
+        margin-bottom: 30px;
+      }
+
+      .hide_paragraph{
+        display: none;
+      }
+
+      a{
+        color: var(--CL-Green, #2EC4B6);
+        font-family: Sofia Pro;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25px;
+        text-decoration-line: underline;
+      }
+
+    }
+
+}
 
  
-}
-
-
-
- @media screen and (min-width:280px) and (max-width:768px) {
-
-  body{
+@media screen and (min-width: 280px) and (max-width:768px){
+  
+   body{
     height: 100%;
-  }
-
-  main{
-   
-    flex-direction: column;
-  }
+   }
 
   section{
     display: flex;
@@ -254,173 +253,198 @@ letter-spacing: 0.2px;
     height: 1294px;
     flex-shrink: 0;
      background-color: var(--clr-bg);
-    
-  }
-
-  .second_container{
-    display: flex;
-    height: 870px;
-    width: 400px;
-    padding: 0;
-    flex-shrink: 0;
-    flex-direction: column;
-    justify-content: space-between;
-   box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
-   border-radius: 6px;
-   background-color: var(--clr-div-bg);
-    
-
-    form{
-      margin-left: 20px;
-      display: flex;
-      flex-direction: column;
-      
-    }
-
-    form label{
-      font-weight: 600;
-    }
-  
-    footer p{
-    display: none;
-    }
-
-    footer .display{
-      display: block;
-      position: absolute;
-      top: 60px;
-      
-    }
-
-      .activity,
-      #pass_code,
-      button,
-      .input
-      
-    {
-    width: ;
-    outline: none;
-   }
-
-    
-
-   .form_one,
-   .form_two,
-   .form_three
-   {
-     display: flex;
-     flex-direction: column;
-    
-    justify-content: center;
-     gap: 32px;
-     margin-top: 12px;
-     
-    
-   }
-
-   .form_sub_three .genderbase{
-    width: ;
-    
+     margin: 0 auto;
+   padding: 12px 12px 0 12px;
    
-  }
-
-  .form_sub_four{
-    margin-left: -2px;
-  }
-  
-   #fname,
-   #lname,
-   #weight,
-   #dob,
-   #height,
-   #sex,
-   #AL,
-   #pass_code,
-   button
-   {
-    
-    outline: none;
-    width: ;
-    height: 45px;
-    flex-shrink: 0;
    }
 
-   #fname,
-   #lname:hover,
-   #weight:hover,
-   #pass_code:hover,
-   #dob:hover,
-   #height:hover,
-   #sex:hover,
-   #AL:hover
-   {
-    border: 2px solid var(--clr-btn);
-    
-   }
+   .first_container{
+    margin: 15px 0 15px 0;
 
-
-   
-   #fname,
-   #lname:active,
-   #weight:active,
-   #pass_code:active,
-   #dob:active,
-   #height:active,
-   #sex:active,
-   #AL:active
-   {
-    border: 2px solid var(--clr-btn);
-    
-   }
-
-   .form_height,
-   .form_sub_four,
-   .form_sub_two
-   {
-    
-    margin-top: -20px;
-   }
-
-   ::placeholder{
-    visibility: visible;
-   }
-
-   .btn button{
-    margin-top: 15px;
-  }
- 
-   
-
-  }
-
-
-  
-  .first_container{
-    display: block;
-    margin-left: -10px;
-
-     p{
-     display: none;
-      color: red;
-    }
-     
-     h2{
+    p{
       display: none;
-     }
-
-   h2::after{
-      content: 'Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.';
-      display: block;
-      font-size: 1rem;
-      font-weight: 200;
-      line-height: 15px;
-      color: grey;
-     
     }
+
+    .second_p{
+      display: block;
+      width: 327px;
+      height: 50px;
+      font-family: Brown;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 25px; /* 156.25% */
+      color: var(--cl-placeholder);
+    }
+
 
     h2{
-      display: block;
-      
+      width: 327px;
+      height: 30px;
+      flex-shrink: 0;
+      font-family: Brown;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.8px;
+      color: var(--cl-black);
     }
-  }
+
+    img{
+      width: 38.667px;
+      height: 40px;
+      flex-shrink: 0;
+      drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.10));
+    
+    }
+   }
+
+
+   .second_container{
+    width: 327px;
+    height: 870px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    background-color: var(--clr-div-bg);
+    display: flex;
+    padding: 0;
+   }
+
+
+   form{
+    display: flex;
+    
+    justify-content: space-between;
+    margin-left: 15px;
+
+    label{
+      width: 179px;
+      font-family: Sofia Pro;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 2.5;
+      letter-spacing: 0.1px;
+      }
+
+
+      input,
+      select,
+      button{
+        width: 295px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        border: 1px solid var(--cl-input);
+        outline: none;
+      }
+
+      input:hover,
+      select:hover,
+      button:hover,
+      #activity:hover,
+      #pass_code:hover,
+      button:hover
+      {
+       border: 1px solid var(--clr-btn);
+      }
+
+      input:active,
+      select:active,
+      button:active,
+      #activity:active,
+      #pass_code:active,
+      button:active
+      {
+       border: 1px solid var(--clr-btn);
+      }
+
+      #activity,
+      #pass_code,
+      button{
+        width: 295px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        border: 1px solid var(--cl-input);
+      }
+
+
+      .form_one,
+      .form_two,
+      .form_three {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      ::placeholder{
+        font-family: Sofia Pro;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 0.2px;
+        color: var(--cl-placeholder);
+      }
+
+      button{
+        width: 295px;
+        height: 48px;
+        flex-shrink: 0;
+        fill: var(--clr-btn);
+        filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
+      }
+
+      footer{
+        position: relative;
+
+       p{
+        display: none;
+       }
+       
+       .hide_paragraph{
+        position: absolute;
+        display: block;
+        text-align: center;
+        font-family: Sofia Pro;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 178.571% */
+        color: var(--cl-footer);
+        width: 316px;
+        height: 50px;
+        margin-left: -10px;
+        top: 15px;
+       }
+
+       a{
+        font-family: Sofia Pro;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25px;
+        text-decoration-line: underline;
+        color: var(--clr-btn);
+       }
+      }
+
+   }
+
+  
+ 
 }
+
+
+
+
+
+
+
+
+
+ 
+ 
