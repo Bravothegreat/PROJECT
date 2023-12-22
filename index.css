@@ -81,7 +81,7 @@ position: relative;
 section .header{
   position: absolute;
   top: 30px;
-  left: 280px;
+  left: 285px;
    display: none;
 }
 
@@ -111,7 +111,7 @@ display: none;
 h2{
   color: var();
 font-family: Brown;
-font-size: 40px;
+font-size: 2rem;
 font-style: normal;
 font-weight: 700;
 line-height: 50px; /* 125% */
@@ -222,7 +222,7 @@ width: 159px;
       color: var(--cl-black);
        height: 30px;
        width: 36px;
-       
+       display: none;
     }
 
     button{
@@ -269,8 +269,8 @@ width: 159px;
 
     }
 
-    #fname{
-      border-color: var(--cl-input);
+   .form_sub_one #fname{
+      border: 1px solid var(--cl-input);
     }
 
 }
@@ -321,19 +321,20 @@ width: 159px;
 
 
    
-   h2{
+   .first_container h2{
     width: 327px;
     height: 30px;
     flex-shrink: 0;
     font-family: Brown;
-    font-size: 1rem;
+    font-size: 2rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     line-height: normal;
     letter-spacing: -0.8px;
     color: var(--cl-black);
-    
-    
+    margin-left: 15px;
+ 
+    margin: -20px 0 20px 10px;
   }
 
    .first_icon{
@@ -341,7 +342,7 @@ width: 159px;
     height: 40px;
     flex-shrink: 0;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
 
