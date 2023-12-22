@@ -270,7 +270,8 @@ width: 159px;
     }
 
    .form_sub_one #fname{
-      border: 1px solid var(--cl-input);
+      border: 1px solid var(--);
+     
     }
 
 }
@@ -286,7 +287,7 @@ width: 159px;
     display: flex;
     flex-direction: column;
     width: 375px;
-    height: 1290px;
+    height: 1270px;
     flex-shrink: 0;
      background-color: var(--clr-bg);
     
@@ -334,7 +335,7 @@ width: 159px;
     color: var(--cl-black);
     margin-left: 15px;
  
-    margin: -20px 0 20px 10px;
+    margin: -10px 0 20px 10px;
   }
 
    .first_icon{
@@ -401,7 +402,7 @@ width: 159px;
   .select #activity:hover,
   .password #pass_code:hover,
    button:hover,
-   #fname:hover
+  .form_sub_one #fname:hover
    {
     border: 1px solid var(--clr-btn);
    }
@@ -440,7 +441,8 @@ width: 159px;
         position: relative
       }
 
-      .password .eye_icon{
+      /* 
+          .password .eye_icon{
         position: absolute;
         top: 50px;
         left: 257px;
@@ -448,7 +450,7 @@ width: 159px;
          width: 36px;
          height: 30px;
       }
-
+      */
 
    ::placeholder{
     font-family: Sofia Pro;
@@ -470,6 +472,13 @@ width: 159px;
     fill: var(--clr-btn);
     filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
     background-color: var(--clr-btn);
+  }
+
+
+  
+  .form_sub_one #fname{
+    border: 1px solid var(--cl-input);
+    
   }
 
 
