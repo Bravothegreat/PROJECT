@@ -62,16 +62,27 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* MAIN STYLING*/
 
+
+
 section{
  display: flex;
+
  flex-direction: row;
   width: 1140px;
   height: 840px;
   flex-shrink: 0;
 background-color: var(--clr-bg);
 margin: 0 auto;
-padding: 12px 12px 0 12px;
+padding: 150px 12px 0 0;
+position: relative;
 
+}
+
+section .header{
+  position: absolute;
+  top: 30px;
+  left: 280px;
+   display: none;
 }
 
 .first_container{
@@ -110,11 +121,11 @@ height: 50px;
 margin: 7px 0 7px 10px;
 }
 
-img{
+.first_icon{
   width: 77.333px;
 height: 80px;
 flex-shrink: 0;
-drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.10));
+/*drop-shadow:(0px 4px 10px rgba(0, 0, 0, 0.10)); */
 
 }
 
@@ -137,8 +148,7 @@ form{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 10px;
-
+  margin: 20px 0 0 15px;
   #fname{
     border: 2px solid var(--clr-btn);
   }
@@ -189,8 +199,30 @@ width: 159px;
     ::placeholder
     {
       color: var(--cl--fph);
-      padding-left: 5px;
       
+      
+    }
+
+    select{
+      padding-left: 15px;
+    }
+
+    input{
+      padding-left: 20px;
+    }
+
+    .password{
+      position: relative;
+    }
+
+    .eye_icon{
+     position: absolute;
+      top: 47px;
+      left: 462px;
+      color: var(--cl-black);
+       height: 30px;
+       width: 36px;
+       
     }
 
     button{
@@ -237,6 +269,10 @@ width: 159px;
 
     }
 
+    #fname{
+      border-color: var(--cl-input);
+    }
+
 }
 
  
@@ -250,17 +286,18 @@ width: 159px;
     display: flex;
     flex-direction: column;
     width: 375px;
-    height: 1294px;
+    height: 1290px;
     flex-shrink: 0;
      background-color: var(--clr-bg);
     
-     margin: 0 auto;
-   
-   
+      margin: 0 auto;
+    
+      
    }
 
    .first_container{
-    margin: 20px 0 10px 5px;
+    margin: -70px 0 10px 23px;
+    display: block;
 
    }
 
@@ -299,11 +336,11 @@ width: 159px;
     
   }
 
-   img{
+   .first_icon{
     width: 38.667px;
     height: 40px;
     flex-shrink: 0;
-    margin-left: -10px;
+    display: block;
     margin-bottom: 10px;
   }
 
@@ -317,7 +354,7 @@ width: 159px;
     background-color: var(--clr-div-bg);
     display: flex;
     margin: 0 auto;
-    padding: 0;
+   margin-left: 25px;
    }
 
 
@@ -325,7 +362,7 @@ width: 159px;
     display: flex;
     
     justify-content: space-between;
-    padding: 35px 5px 0 5px;
+    
 
    }
 
@@ -353,12 +390,17 @@ width: 159px;
      outline: none;
    }
 
+     form input{
+      padding-left: 20px;
+     }
+
    input:hover,
    select:hover,
    button:hover,
   .select #activity:hover,
   .password #pass_code:hover,
-   button:hover
+   button:hover,
+   #fname:hover
    {
     border: 1px solid var(--clr-btn);
    }
@@ -393,6 +435,19 @@ width: 159px;
         gap: 10px;
       }
 
+      .password{
+        position: relative
+      }
+
+      .password .eye_icon{
+        position: absolute;
+        top: 50px;
+        left: 257px;
+        color: var(--cl-black);
+         width: 36px;
+         height: 30px;
+      }
+
 
    ::placeholder{
     font-family: Sofia Pro;
@@ -402,8 +457,7 @@ width: 159px;
     line-height: 20px; /* 142.857% */
     letter-spacing: 0.2px;
     color: var(--cl-placeholder);
-   
-    padding-left: 10px;
+    
   }
 
 
@@ -414,7 +468,7 @@ width: 159px;
     flex-shrink: 0;
     fill: var(--clr-btn);
     filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
-   
+    background-color: var(--clr-btn);
   }
 
 
@@ -457,6 +511,10 @@ width: 159px;
     
    }
   
+
+   section .header{
+    display: block;
+   }
  
 }
 
