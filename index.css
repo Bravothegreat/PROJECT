@@ -73,7 +73,7 @@ section{
   flex-shrink: 0;
 background-color: var(--clr-bg);
 margin: 0 auto;
-padding: 150px 12px 0 0;
+padding: 125px 12px 0 0;
 position: relative;
 
 }
@@ -236,6 +236,7 @@ width: 159px;
       letter-spacing: 0.2px;
       drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
       background-color: var(--clr-btn);
+      color: var(--cl-input);
     }
 
     footer{
@@ -287,7 +288,7 @@ width: 159px;
     display: flex;
     flex-direction: column;
     width: 375px;
-    height: 1270px;
+    height: 1250px;
     flex-shrink: 0;
      background-color: var(--clr-bg);
     
@@ -297,7 +298,7 @@ width: 159px;
    }
 
    .first_container{
-    margin: -70px 0 10px 23px;
+    margin: -70px 0 10px 18px;
     display: block;
 
    }
@@ -441,7 +442,7 @@ width: 159px;
         position: relative
       }
 
-      /* 
+      
           .password .eye_icon{
         position: absolute;
         top: 50px;
@@ -450,7 +451,7 @@ width: 159px;
          width: 36px;
          height: 30px;
       }
-      */
+      
 
    ::placeholder{
     font-family: Sofia Pro;
@@ -472,6 +473,7 @@ width: 159px;
     fill: var(--clr-btn);
     filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
     background-color: var(--clr-btn);
+    color: var(--cl-input);
   }
 
 
